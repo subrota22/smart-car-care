@@ -1,0 +1,17 @@
+
+.text{
+    background-image: url("https://placeimg.com/800/200/arch");
+    background-position: center;
+    background-size: cover;
+    padding: 12px 20px;
+    color: white;
+    text-shadow: 2px 3px rgb(18, 31, 6);
+}
+.overly::after{
+    content: "";  
+    height: 300px;   
+    width: 300px;   
+    top: 0;   
+    left: 20px;   
+    background-color: rgba(red, green, blue, 0.2);   
+}
