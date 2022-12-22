@@ -16,11 +16,12 @@ return (
     <br />
      but the majority have suffered alteration in some form
     </p>
-  <div className="my-12 hidden md:visible">
-  <button className="btn btn-primary  mr-3">Discover More</button>
- <button className="btn btn-primary">Latest Project</button>
+<div className="my-12">
+  <button className="hidden md:visible btn btn-primary  mr-3">Discover More</button>
+ <button className="hidden md:visible btn btn-primary">Latest Project</button>
   </div>
- </div>
+</div>
+
 
     <div className="absolute flex justify-end  left-5 right-5 bottom-5">
       <a  href={`#slide${prev}`} className="btn btn-primary mr-5">
