@@ -3,7 +3,7 @@ import React from 'react';
 const WorkingTime = () => {
 return (
 
-<div className="gap-8  px-10 py-8 items-center  bg-black rounded-md  text-center 
+<div className="gap-8 w-full  px-10 py-8 items-center  bg-black rounded-md  text-center 
  flex xs:flex-col sm:flex-col md:flex-row  justify-around">
  <div className="flex justify-around">
 <img src="https://i.ibb.co/GT596cb/clock.jpg" alt="clock" className='h-8 w-8 rounded-lg mx-2' />

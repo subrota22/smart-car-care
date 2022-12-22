@@ -22,7 +22,7 @@ const Home = () => {
 // } , [ user.email ])
 return (
 <React.Fragment>
-<div>
+<div className='container'>
 <CountDown></CountDown>
 <Banner></Banner>
 <About></About>

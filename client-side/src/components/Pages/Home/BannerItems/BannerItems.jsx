@@ -16,7 +16,7 @@ return (
     <br />
      but the majority have suffered alteration in some form
     </p>
-  <div className="my-12">
+  <div className="my-12 hidden md:visible">
   <button className="btn btn-primary  mr-3">Discover More</button>
  <button className="btn btn-primary">Latest Project</button>
   </div>

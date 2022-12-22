@@ -75,7 +75,7 @@ className='h-14 w-14' alt="queties"/>
 </a>
 {/* right arrow  */}
 
-<div className="mx-auto">
+<div className="mx-auto hidden md:visible">
 <a href= {`#testimonalSlide${next}`}  className="btn btn-success  visible sm:visible md:invisible w-20 mt-36 font-bold text-xl text-white ">
 <BsArrowRight></BsArrowRight>
 </a>
