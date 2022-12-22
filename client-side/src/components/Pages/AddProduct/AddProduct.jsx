@@ -48,7 +48,9 @@ onChange={handleInputFeild}  name='productPrice' className="input input-bordered
 <input type="date" placeholder="Your product publish data"
 onChange={handleInputFeild}  name='productPublishDate' className="input input-bordered input-secondary w-96 max-w-xs  mr-2  m my-2" required/>
 
-<button className="btn btn-primary w-96 ml-32  my-3"> Add Product  </button>
+<div>
+<button className="btn btn-primary  max-w-screen-xl    my-3"> Add Product  </button>
+</div>
 </form>
 </div>
 );

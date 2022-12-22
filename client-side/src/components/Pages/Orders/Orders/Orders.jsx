@@ -5,12 +5,14 @@ import { BsTrashFill } from 'react-icons/bs';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../../UserContext/UserContext';
 import ClipLoader from "react-spinners/ClipLoader" ;
+import PageLoader from '../../../Share/PageLoader/PageLoader';
 const Orders = () => {
 const {user , logOutUser }  = React.useContext(AuthContext) ;
 const [ordersInfo , setOrdersInfo] = useState([]) ;
 const {email } = user;
 const navigate = useNavigate() ;
 //https://smart-car-eight.vercel.app/
+const [loadPage , setLoadPage] = useState(true) ;
 useEffect(() => {
 if(!email) return ;
 fetch(`https://smart-car-subrota22.vercel.app/allOrders?email=${email}` , {
@@ -28,7 +30,8 @@ return res.json() ;
 //use return to return data from function mind it 
 })
 .then(data => {
-setOrdersInfo(data)
+setOrdersInfo(data) ;
+setLoadPage(false) ;
 } )
 .catch((error) => console.log(error))
 } , [  email  , logOutUser , navigate]);
@@ -70,6 +73,10 @@ setOrdersInfo(reaminingData) ;
 } else{
 window.alert("Your data is safe now !!")
 }
+};
+
+if(loadPage){
+return <PageLoader></PageLoader>
 }
 
 return (

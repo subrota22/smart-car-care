@@ -18,7 +18,7 @@
   window.alert(error.message) ;
   })
   }
-  const menueItem = <>
+  const menueItem =  <>
   <li className='mr-4'> <NavLink to="/about"> About </NavLink> </li>
   <li> <NavLink to="/contact"> Contact </NavLink> </li>
   </>
@@ -43,10 +43,23 @@
   </label>
   <ul tabIndex={0} className="menu menu-compact font-semibold dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
   {menueItem}
+  <li><NavLink to="/add-services">Add services </NavLink></li>
+  <li><NavLink to="/add-product"> Add products</NavLink></li>
+  <li>
+  <NavLink to="/orders" className="btn btn-primary my-2">
+  Orders 
+  </NavLink>
+  </li>
+
+  <li> 
+  <button className="btn btn-primary"
+  onClick={() => logOutUserInformation()}>Log out</button>
+
+  </li>
   </ul>
   </div>
   <NavLink to="/" className="normal-case text-xl">
-  <h2 className='text-xl font-bold text-blue-600 uppercase'>Smart car care </h2>
+  <h2 className='text-xl font-bold text-blue-600 uppercase mx-2'>Smart car care </h2>
   </NavLink>
   </div>
   <div className="navbar-center hidden lg:flex">

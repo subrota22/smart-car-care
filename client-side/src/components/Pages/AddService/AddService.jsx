@@ -53,7 +53,10 @@ onChange={handleInputFeild}  name='servicePrice' className="input input-bordered
 <input type="date" placeholder="Your service publish date"
 onChange={handleInputFeild}  name='servicePublishDate' className="input input-bordered input-secondary w-96 max-w-xs  mr-2  m my-2" required />
 
-<button className="btn btn-primary ml-32  w-96 my-3"> Add Services </button>
+<div>
+    <button className="btn btn-primary mx-auto   max-w-screen-lg my-3  block"> Add Services </button>
+
+</div>
 </form>
 </div>
 );

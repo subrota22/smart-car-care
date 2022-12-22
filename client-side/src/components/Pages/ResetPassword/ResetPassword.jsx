@@ -6,7 +6,6 @@ const {resetPassword} = useContext(AuthContext) ;
 const handleFormSubmit = (event) => {
 event.preventDefault() ;
 const email =  event.target.email.value ;
-console.log(email);
 resetPassword(email)
 .then(() => {
     Swal.fire({
@@ -28,7 +27,7 @@ resetPassword(email)
         <>
         <div className="hero min-h-screen bg-base-200">
   <div className="hero-content flex-col lg:flex-row-reverse">
-    <div className="text-center lg:text-left">
+    <div className="text-center lg:text-left m-8">
       <h1 className="text-5xl font-bold">Reset password  now!</h1>
       <p className="py-6">Enter your valid email than check your inbox to reset your password.</p>
     </div>
